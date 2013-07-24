@@ -189,7 +189,7 @@ diff包装脚本首先确定传递过来7个参数，随后把其中2个传递�
 
 命令行居然没有发现diff命令的输出，其实，Git 调用了刚刚设置的P4Merge，它看起来像图7-1这样：
 
-![7.1 P4Merge.](../../../../raw/master/figures/18333fig0701.png "7.1 P4Merge.")
+![7.1 P4Merge.](../../../../raw/master/figures/18333fig0701-tn.png "7.1 P4Merge.")
 
 Figure 7-1. P4Merge.
 
@@ -392,11 +392,11 @@ Git 成功且简洁地显示出我增加的文本"Let’s see if this works"。�
 
 因此，你能写自己的过滤器，在提交文件到暂存区或签出文件时替换关键字。有2种过滤器，"clean"和"smudge"。在 `.gitattributes`文件中，你能对特定的路径设置一个过滤器，然后设置处理文件的脚本，这些脚本会在文件签出前（"smudge"，见图 7-2）和提交到暂存区前（"clean"，见图7-3）被调用。这些过滤器能够做各种有趣的事。
 
-![7.2 签出时，“smudge”过滤器被触发。](../../../../raw/master/figures/18333fig0702.png "7.2 签出时，“smudge”过滤器被触发。")
+![7.2 签出时，“smudge”过滤器被触发。](../../../../raw/master/figures/18333fig0702-tn.png "7.2 签出时，“smudge”过滤器被触发。")
 
 图7-2. 签出时，“smudge”过滤器被触发。
 
-![7.3 提交到暂存区时，“clean”过滤器被触发。](../../../../raw/master/figures/18333fig0703.png "7.3 提交到暂存区时，“clean”过滤器被触发。")
+![7.3 提交到暂存区时，“clean”过滤器被触发。](../../../../raw/master/figures/18333fig0703-tn.png "7.3 提交到暂存区时，“clean”过滤器被触发。")
 
 图7-3. 提交到暂存区时，“clean”过滤器被触发。
 
